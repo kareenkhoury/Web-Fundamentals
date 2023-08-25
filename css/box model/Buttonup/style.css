@@ -1,0 +1,40 @@
+input[type="text"] {
+    background-color: white; 
+    border: 1px solid #40AEAF;
+    color: #40AEAF;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 13px;
+    margin: 50px 20px 20px 50px;
+    border-radius: 50px;
+}
+.plus{
+    background-color: #00d1b2;
+    border: 1px solid #00d1b2;
+    color: white;
+    text-align: center;
+    padding: 20px 1px;
+    font-size: 20px;
+    margin: 0px 20px 20px 50px;
+    border-radius: 35px;
+    width: 40px;
+    height: 40px;
+    appearance: none;
+    white-space-collapse: unset;
+    text-wrap: unset;
+    padding-block: 0px;
+    padding-inline: 0px;
+    box-sizing: unset;
+}
+.create {
+    background-color: #2b78e4;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    padding: 10px 1px;
+    font-size: 15px;
+    margin: 0px 20px 0px 50px;
+    width: 150px;
+    height: 40px;
+    box-shadow: 5px 5px 0 rgba(0,0,0,10);
+}
