@@ -4,19 +4,22 @@
     text-align: center;
     background-color:#ffffff;
     margin: 122px;
-    padding: 1px 1px 41px 0px
+    padding: 1px 1px 41px 0px;
+    height: 272px;
+    width: 624px;
+    position: fixed;
   
 }
 
 .img {
-     border-radius: 50%; 
-    border: 5px solid #cccccc; 
-    overflow: hidden; 
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+    overflow: hidden;
     height: 100px;
     width: 100px;
-    margin: 1px -3px -60px;
+    margin: 1px 41px 0px;
     position: relative;
-    top: -58px;
+    top: 40px;
 }
 h1 {
     font: menu;
@@ -26,15 +29,15 @@ h1 {
 }
 .d {
     background-color: #17a2b8;
-    padding: 72px 0px 42px 0px;
+    padding: 0px 0px 0px 0px;
     position: relative;
-    margin: -2px
+    margin: 0px;
 }
 
 .con1 {
     text-align: left;
     text-align: left;
-    margin: 0px 41px;
+    margin: 47px 41px;
 }
 .firstp {
     display: inline;

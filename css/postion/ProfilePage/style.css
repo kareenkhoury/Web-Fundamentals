@@ -1,3 +1,8 @@
+.all {
+
+    position: fixed;
+    width: 1230px;
+}
 .nav{
     background-color: #333333;
     display: flex;
@@ -56,12 +61,13 @@
    
 }
 .con {
-    font-family:'roboto';
-    border:  2px solid #cccccc;
+    width: 448px;
+    font-family: 'roboto';
+    border: 2px solid #cccccc;
     text-align: center;
-    background-color:#ffffff;
-    margin: 21px 391px 0px 67px;
-    padding: 1px 1px 41px 0px
+    background-color: #ffffff;
+    margin: 21px 391px 0px 160px;
+    padding: 1px 1px 17px 0px;
   
 }
 
@@ -113,10 +119,10 @@ h1 {
     font-weight: bold;
 }
 .edu {
-      
+        width: 448px;
         border: 2px solid #cccccc;
         background-color: #ffffff;
-        margin: 21px 391px 0px 67px;
+        margin: 21px 391px 0px 160px;
         padding: 1px 1px 41px 0px;
         font-weight: bold; 
 }
@@ -140,9 +146,7 @@ h1 {
     padding: 0px 20px;
 }
 .conreq {
-    position: relative;
-    top: -593px;
-    left: 750px;
+    
     margin: 23px 83px 5px 77px;
     width: 235px;
     font-family:'roboto';
@@ -154,28 +158,40 @@ h1 {
 .conreq1 {
     background-color: #333333;
     color: white;
-    padding: 5px 8px 14px 0px;
+    padding: 14px 8px 14px 0px;
     font-size: 20px;
     
 }
 .conreq p {
     display : inline;
     text-align: center;
-    padding: 5px 8px 0px 11px;
+    padding: 0px 8px 0px 9px;
+    font-size: 18px;
 }
 .todd {
     padding: 12px;
+    display: flex;
+    justify-content: space-between;
 
+}
+.todd p {
+    text-align: center;
+    padding: 0px 30px 0px 0px
 }
 .Phil {
     padding: 0px 13px;
-
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Phil p {
+    padding: 0px 13px;
+    display: flex;
+    justify-content: space-between;
     
 }
 .yourconn {
-    position: relative;
-    top: -593px;
-    left: 750px;
+    
     margin: 23px 83px 5px 77px;
     width: 235px;
     font-family:'roboto';
@@ -190,4 +206,40 @@ h1 {
 .divs {
     padding: 6px 10px;
     margin: 2px 5px 1px 2px;
+}
+.side {
+    position: fixed;
+    top: 75px;
+    left: 589px;
+}
+.t {
+    padding: 6px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:#cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#343434;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 6px;
+}
+.f {
+    padding: 6px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:#cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#343434;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 6px;
 }
