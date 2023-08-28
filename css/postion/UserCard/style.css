@@ -1,0 +1,57 @@
+.con {
+    font-family:'roboto';
+    border:  2px solid #cccccc;
+    text-align: center;
+    background-color:#ffffff;
+    margin: 122px;
+    padding: 1px 1px 41px 0px
+  
+}
+
+.img {
+     border-radius: 50%; 
+    border: 5px solid #cccccc; 
+    overflow: hidden; 
+    height: 100px;
+    width: 100px;
+    margin: 1px -3px -60px;
+    position: relative;
+    top: -58px;
+}
+h1 {
+    font: menu;
+    margin: 0;
+    font-weight: 500;
+    font-size: 27px;
+}
+.d {
+    background-color: #17a2b8;
+    padding: 72px 0px 42px 0px;
+    position: relative;
+    margin: -2px
+}
+
+.con1 {
+    text-align: left;
+    text-align: left;
+    margin: 0px 41px;
+}
+.firstp {
+    display: inline;
+    padding: 0px 5px;
+    position: relative;
+    font-weight: bold;
+    font: menu;
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+}
+.secondp {
+    margin: 10px 0px 0px;
+    font-weight: bold;
+}
+
+.thirdp {
+    margin: 0px 0px 10px;
+    font-weight: bold;
+}
