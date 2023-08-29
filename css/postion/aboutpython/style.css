@@ -1,0 +1,256 @@
+.blue {
+  font-family: system-ui;
+  background-color: #245076;
+  height: 460px;
+
+}
+.side {
+  padding: 0px 47px;
+    
+}
+.side p{
+    display: inline;
+    color: white;
+    
+}
+.side a {
+    color: #d5b300; 
+    text-decoration: none; 
+    text-decoration: underline;
+  }
+  a:hover {
+    color: blue; 
+  }
+  .together {
+    position: absolute;
+    top: 15px;
+    left: 922px;
+  }
+  .search {
+    border-radius: 15px;
+    border:  2px solid #444444;
+    height: 50px;
+    width: 250px;
+    background-color:#444444;
+    box-shadow: 4px 3px 0px rgba(0, 0, 0, 0.2);
+   
+  
+  }
+  .bo {
+    padding: 13px 20px;
+  }
+  input[type="text"] {
+    
+    border:  2px solid #9a9a9a;
+    font-size: 16px;
+    padding: 0px;
+    width: 148px;
+    margin: 0px;
+    height: 26px;
+    text-align: center;
+  }
+  button {
+    border-radius: 7px;
+    border:  2px solid #9a9a9a;
+    color: white;
+    background-color: #245076;
+    font-size: 10px;
+    padding: 7px 14px;
+    margin: 0px 2px 0px 6px;
+  }
+  
+.nav{
+  border-radius: 10px;
+  background-color: #457dad;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 0px 66px;
+  width: 968px;
+  box-shadow: 4px 3px 0px rgba(4, 0, 0, 0.2);
+  position: relative;
+  left: 68px;
+}
+
+.links {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px ;
+}
+.about{
+    font-size: 25px;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.download {
+    font-size: 25px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.documentation {
+    font-size: 25px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.community{
+    font-size: 25px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-family:'roboto';
+   
+}
+.news{
+    font-size: 25px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.events{
+    font-size: 25px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.list{
+    list-style-type: none;
+    color: white;
+    text-decoration: underline;
+    position: relative;
+    left: 183px;
+    display: inline;
+    justify-content: center;
+   
+}
+.list li {
+    position: relative;
+    text-align: center;
+    right: 532px;
+    height: 27px;
+    top: 5px;
+  }
+ 
+.list li::before {
+    content: "»";
+    position: absolute;
+    right: 20;
+    color: #f2cc34;
+  }
+  .para {
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 390px;
+    text-align: center;
+    width: 632px;
+}
+.sent {
+  display: inline;
+    color: #ffd42e;
+    position: absolute;
+    top: 272px;
+    left: 417px;
+    text-align: center;
+    width: 629px;
+    padding: 0px 0px0 8px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+.sent p {
+  height: 10px;
+}
+.one {
+  display: inline;
+    color: white;
+    position: absolute;
+    top: 424px;
+    left: 415px;
+    text-align: center;
+    width: 629px;
+    padding: 0px 0px0 8px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.white {
+  text-align: center;
+  padding: 0px 167px;
+  height: 225px;
+}
+.white1 {
+  width: 351px;
+  
+  
+}
+.white2{
+  width: 412px;
+  position: absolute;
+  top: 466px;
+  left: 645px;
+  
+}
+.bold-paragraph1{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 auto;
+  height: 7px;
+  font-family: math;
+}
+.bold-paragraph2{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 auto;
+  height: 7px;
+  font-family: math;
+}
+.white2 li {
+  color: #8cb7dd;
+  list-style-type: square;
+  
+}
+.white1 li {
+  color: #8cb7dd;
+  list-style-type: square;
+}
+.line1 {
+  background-color: #73a7d5;
+    padding: 2px 0px;
+    margin: 12px;
+    width: 379px;
+}
+.line2 {
+  background-color: #73a7d5;
+    padding: 2px 0px;
+    margin: 12px;
+    width: 379px;
+}
+.end {
+  background-color: #2a608f;
+   
+    padding: 11px 0px;
+    
+    color: #83b5e2;
+   
+}
+.end1{
+  display: flex;
+  justify-content: space-evenly;
+    align-content: space-between;
+    font-size: 17px;
+}
+.end2{
+  font-size: 7px;
+  text-align: center;
+}
