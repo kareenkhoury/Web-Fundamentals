@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript in HTML</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="first">
+        <h1>Dojonary</h1>
+        <input type="text" value="search" placeholder="search">
+        <button onclick="logout(this)">Login</button>
+    </div>
+  <div class="parentsecond">
+    <div class="second">
+        <section>
+            <div class="one" >
+                <div class="oneleft">
+                    <h1>ninja</h1>
+                    <p ><em>noun</em></p>
+                    <h5 >Plural: ninjaS</h5>
+                    <input onclick="alert('ninja was liked')" class="b1" type="button" value="13 likes" ><br>
+                </div>
+                <div class="oneright">
+                <P>A practitioner skilled in the <a href="www.jopanese">Jopanese</a> art of <a href="www.ninjutsu">ninjutsu</a> </P>
+                </div>
+            </div>
+            <div class="two">
+                <div class="twoleft">
+                        <h1>ninja</h1>
+                        <p ><em>noun</em></p>
+                        <h5 >Plural: ninjaS</h5>
+                        <input onclick="alert('ninja was liked')" class="b2" type="button" value="37 likes" ><br>
+                </div>
+                <div class="tworight">
+                          <P>A<a href="www.programmer">programmer</a> who breaks down problems with <a href="www.zen">Zen</a>-like focus </P>
+                </div>
+            </div>
+        </section> 
+    </div>
+    <aside>
+        <p>Dojonary is defined by <strong>YOU</strong></p>
+        <input  onclick="remove(this)" class="b3" type="button" value="Add Definition" ><br>
+    </aside>
+  </div>
+    <script> 
+    function logout(element) {
+        element.innerText = "Logout";
+    }
+    function remove(element) {
+        element.remove();
+    }
+    </script>
+</body>
+</html>
