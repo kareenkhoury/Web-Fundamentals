@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Likes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="parent" >
+        <div class="one">
+            <h4>Some User</h4>
+            <p id="text">3 like(s)</p>
+            <button  onclick={set()} id="likebutton"  class="b1" type="button" value="Like" >Like</button>
+        </div>
+        <p >This is some filter text, it can say anything we like</p>
+</div>
+    
+    <script>
+        var text = document.getElementById("text");
+        var likebutton = document.getElementById("likebutton");
+
+        var likeCount = 3;
+        function setActive(element) {
+            likeCount++;
+        }
+        function set(){
+            likeCount++;
+
+            text.textContent = ` ${likeCount} ${likeCount === 1 ? "like" : "likes"}.`;
+        }
+
+    </script>
+</body>
+</html>

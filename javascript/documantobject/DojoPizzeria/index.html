@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript in HTML</title>
+   
+</head>
+<body>
+    <script>
+
+function pizzaoven(crustType, sauceType, cheeses, toppings) {
+    var pizza = {};
+    pizza.crustType= crustType;
+    pizza.sauceType = sauceType ;
+    pizza.cheeses = cheeses;
+    pizza.toppings= toppings;
+    return pizza;
+}
+   
+var s1 = pizzaoven("deep dish", "traditional", "mozzarella", ["pepperoni", "sausage"]);
+console.log(s1);
+var s2 = pizzaoven("hand tossed", "marinara", ["mozzarella", "feta"], ["mushrooms", "olives", "onions"]);
+console.log(s2);
+function randomPizza() {
+   var crustTypes = ["deep dish", "hand tossed", "stuffed"];
+   var sauceTypes = ["traditional", "sweet chili", "BBQ"];
+   var cheeseOptions = ["mozzarella", "cheddar", "feta"];
+   var toppingOptions = ["pepperoni", "sausage", "mushrooms", "olives", "onions"];
+
+    function getRandomItem(min, max) {
+  return Math.random() * (max - min) + min;
+}
+    return {
+        crustType: getRandomItem(crustTypes),
+        sauceType: getRandomItem(sauceTypes),
+        cheeses: [getRandomItem(cheeseOptions)],
+        toppings: [getRandomItem(toppingOptions)]
+    };
+}
+const randomPizza1 = randomPizza();
+console.log(randomPizza1);
+
+   </script>
+</body>
+</html>

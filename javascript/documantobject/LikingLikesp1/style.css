@@ -1,0 +1,25 @@
+.parent {
+    margin: 32px auto;
+    border: 2px solid black;
+    width: 387px;
+ }
+ .one {
+    display: flex;
+    justify-content: space-around;
+ }
+ .parent p {
+    padding: 0px 22px;
+    font-size: 18px;
+ }
+ .b1 {
+    background-color: #ffd966;
+    border: 3px solid #110f0f;
+    color: #110f0f;
+    text-align: center;
+    padding: 10px 1px;
+    font-size: 15px;
+    margin: 8px 12px 0px -6px;
+    width: 72px;
+    height: 40px;
+    box-shadow: 3px 2px 0 rgba(0,0,0,10);
+}

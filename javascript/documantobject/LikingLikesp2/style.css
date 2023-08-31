@@ -1,0 +1,86 @@
+h1{
+   background-color: black;
+   color: white;
+   font-family: math;
+   padding: 6px;
+   margin: 0px 216px;
+   width: 629px;
+}
+
+.p{
+   font-family: math;
+   margin: 0px 97px;
+   width: 916px;
+   text-align: center;
+   font-size: 25px;
+}
+.parent1 {
+   margin: 0px 0px 11px;
+   border: 2px solid black;
+   width: 387px;
+ }
+ .parent2 {
+   margin: 0px 0px 11px;
+    border: 2px solid black;
+    width: 387px;
+}
+.parent3 {
+   margin: 0px 0px 11px;
+   border: 2px solid black;
+   width: 387px;
+}
+aside{
+   text-align: center;
+   height: 206px;
+   margin: 0px 0;
+   border: 2px solid black;
+   width: 181px;
+   padding: 7px 10px;
+}
+ .one {
+    display: flex;
+    justify-content: space-around;
+ }
+ .two {
+   display: flex;
+   justify-content: space-around;
+}
+.three {
+   display: flex;
+   justify-content: space-around;
+}
+ .parent1 p {
+    padding: 0px 22px;
+    font-size: 18px;
+ }
+ .parent2 p {
+   padding: 0px 22px;
+   font-size: 18px;
+}
+.parent3 p {
+   padding: 0px 22px;
+   font-size: 18px;
+}
+ .b1 {
+    background-color: #ffd966;
+    border: 3px solid #110f0f;
+    color: #110f0f;
+    text-align: center;
+    padding: 10px 1px;
+    font-size: 15px;
+    margin: 8px 12px 0px -6px;
+    width: 72px;
+    height: 40px;
+    box-shadow: 3px 2px 0 rgba(0,0,0,10);
+}
+.parentofall{
+   display: flex;
+   width: 775px;
+   margin: 0 auto
+}
+.parentofthree {
+   margin: 0px 32px;
+}
+aside a{
+   display: block;
+}
