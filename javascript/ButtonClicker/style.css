@@ -7,8 +7,8 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 50px 0px 66px;
-    width: 968px;
+    padding: 5px 50px 5px 66px;
+    width: 794px;
 }
 button {
     box-shadow: 4px 3px 0px rgb(2 2 2);
@@ -18,15 +18,14 @@ button {
     font-size: 10px;
     padding: 7px 14px;
     margin: 0px 2px 0px 6px;
+    
 }
  .second {
  
-    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1px 50px 0px 66px;
-    width:394px;
+    width: 513px;
  }
  .one {
     margin: 23px 0;
@@ -85,13 +84,20 @@ aside {
     margin: 23px 0;
     border: 3px solid black;
     height: 160px;
-    width: 256px;
+    width: 295px;
     font-size: 20px;
     padding: 9px;
     
  }
  .parentsecond{
-    margin: 0px 0px 0px 0px;
+    margin: 0px auto;
     display: flex;
-    width: 651px;
+    justify-content: space-between;
+    width: 908px;
+ }
+ section {
+    width: 521px;
+ } 
+  input{
+    width: 300px;
  }
