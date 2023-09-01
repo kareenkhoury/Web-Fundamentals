@@ -1,0 +1,242 @@
+body{
+    margin:0;
+}
+nav{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.navigation-bar{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 815px;
+    margin: 0 auto;
+}
+.navigation-right{
+    width: 60%;
+    display: flex;
+}
+.nav-title {
+    color: white;
+    width: 15%;
+    margin: 0px 59px;
+    font-family: 'roboto';
+    margin:0;
+}
+.nav-links {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+    margin: 10px 20px;
+}
+section{
+    width: 560px;
+}
+.home{
+    color: #a4a4a4;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.active {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-family:'roboto';
+}
+.active:active {text-decoration: none; color: red;}
+.find{
+    color: #a4a4a4;
+    text-decoration: none;
+    font-family:'roboto';
+   
+}
+.btn {
+    color: white;
+    background-color: #17a2b8;
+    border: 3px solid black;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    height: fit-content;
+    font-family: 'roboto';
+    box-shadow: 5px 5px 0 rgba(0,0,0,10);
+}
+.con {
+    font-family: 'roboto';
+    border: 2px solid #cccccc;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 1px 1px 17px 0px;
+  
+}
+
+.img {
+     border-radius: 50%; 
+    border: 5px solid #cccccc; 
+    overflow: hidden; 
+    height: 100px;
+    width: 100px;
+    margin: 1px -3px -60px;
+    position: relative;
+    top: -58px;
+}
+h1 {
+    font: menu;
+    margin: 0;
+    font-weight: 500;
+    font-size: 27px;
+}
+.d {
+    background-color: #17a2b8;
+    padding: 72px 0px 42px 0px;
+    position: relative;
+    margin: -2px
+}
+
+.con1 {
+    text-align: left;
+    text-align: left;
+    margin: 0px 41px;
+}
+.firstp {
+    display: inline;
+    padding: 0px 5px;
+    position: relative;
+    font-weight: bold;
+    font: menu;
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+}
+.secondp {
+    margin: 10px 0px 0px;
+    font-weight: bold;
+}
+
+.thirdp {
+    margin: 0px 0px 10px;
+    font-weight: bold;
+}
+.edu {
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    padding: 1px 1px 41px 0px;
+    font-weight: bold; 
+    margin-top:10px;
+}
+.edu1 {
+    background-color: #333333;
+    padding: 1px 0px 4px 22px;
+    color: white;
+}
+.p1 {
+    padding: 0px 20px;
+    font-size: 20px;
+    margin: 11px 0px 0px 0px;
+}
+.p2 {
+    color: #7f7f7f;
+    margin: 9px 0px;
+    font: message-box;
+    padding: 0px 21px;
+}
+.p3 {
+    padding: 0px 20px;
+}
+.connection {
+    width: 235px;
+    font-family: 'roboto';
+    border: 2px solid #cccccc;
+    background-color: #ffffff;
+    padding: 1px 1px 0px 0px;
+    margin-bottom: 10px;
+}
+.connection-header {
+    background-color: #333333;
+    color: white;
+    padding: 14px 8px 14px 0px;
+    font-size: 20px;
+    
+}
+.connection p {
+    display : inline;
+    text-align: center;
+    padding: 0px 8px 0px 9px;
+    font-size: 18px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 0;
+}
+.row p {
+    text-align: center;
+    margin:0;
+}
+.row-right{
+    display: flex;
+    align-items: center;
+}
+.row-1 {
+    display: flex;
+    align-items: center;
+    margin:5px 0;
+}
+
+.row-1 p {
+    text-align: center;
+    margin:0;
+}
+.yourconn p {
+    display: inline;
+}
+.divs {
+    padding:10px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 815px;
+    margin: 10px auto;
+}
+.t {
+    padding: 6px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:#cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#343434;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    padding: 6px;
+}
+.f {
+    padding: 6px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color:#cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#343434;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 6px;
+}

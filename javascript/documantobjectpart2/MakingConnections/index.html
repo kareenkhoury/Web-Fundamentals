@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="all">
+        <nav>
+            <div class="navigation-bar">
+                <div class="navigation-right">
+                    <h1 class="nav-title">Profile</h1>
+                    <ul class="nav-links">
+                        <li><a href="#" class="home" >Home</a></li>
+                        <li><a href="#" class="active">My Profile</a></li>
+                        <li><a href="#" class="find" >Find Connections</a></li>
+                    </ul>
+                </div>
+                <button class="btn">Sign Out</button>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="con">
+                    <div class="d"> </div>
+                    <div class="con1"> 
+                    <div class="img"> <img src="user-circle.png" alt="user pic" width="100" height="100" border-radius="50%"></div>
+                    <div class="con2">
+                    <h1 id="text">Jane Doe</h1>
+                    <img src="map-marker.png" alt="map pic" width="12" height="12">
+                    <p class="firstp"> Seattle</p>
+                    <p class="secondp">Developer | Engineer | Problem Solver</p>
+                    <p class="thirdp">Master of shadows and the Internet!</p>
+                    <img src="gear.png" alt="gear pic" width="12" height="12">
+                    <a href="http://www.editprofile.com" onclick="set(event)" id="likelink">edit profile</a>
+                    </div>
+                    </div>
+                </div>
+                <script>
+                    function set(event) {
+                        event.preventDefault();
+                        var h1 = document.getElementById("text");
+                        h1.innerText = "Tareq D";
+                    }
+                </script>
+                <div class="edu">
+                    <div class="edu1"><p>Education</p></div>
+                    <p class="p1">Coding Dojo -Full Stack BootCamp</p>
+                    <p class="p2">Dec 2019 - Mar 2020</p>
+                    <p class="p3">Triple black belt in Python,MERN, and C#...</p>
+                </div>
+            </section>
+            <aside>
+                <div class="connection">
+                    <div class="connection-header">
+                        <p class="t">2</p>
+                        <p class="conp" >Connection Request</p>
+                    </div>
+                    <div class="divs">
+                        <div class="row">
+                            <div class="row-right">
+                                <img src="user-circle.png" alt="user img pic" width="30" height="30">
+                                <p>Todd E</p>
+                            </div>
+                            <div class="actions">
+                                <img id="likebutton2"  onclick="remove(this)" src="accept-circle.png" alt="accept pic" width="30" height="30">
+                                <img id="likemin2" onclick="removemin(this)" src="close-circle.png" alt="close pic" width="30" height="30">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="row-right">
+                                <img src="user-circle.png" alt="gear pic" width="30" height="30">
+                                <p>Phil K</p>
+                            </div>
+                            <div class="actions">
+                                <img  id="likebutton1" onclick="remove(this)" src="accept-circle.png" alt="accept pic" width="30" height="30">
+                                <img id="likemin1" onclick="removemin(this)" src="close-circle.png" alt="close pic" width="30" height="30">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="connection">
+                    <div class="connection-header">
+                        <p id="text1" class="f">500</p>
+                        <p > Your Connection</p>
+                    </div>
+                    <div class="divs">
+                        <div class="row-1">
+                            <img src="user-circle.png" alt="user img pic" width="30" height="30">
+                            <p> Adrien D</p>
+                        </div>
+                        <div class="row-1">
+                            <img src="user-circle.png" alt="user img pic" width="30" height="30">
+                            <p> Anne J</p>
+                        </div>
+                        <div class="row-1">
+                            <img src="user-circle.png" alt="user img  pic" width="30" height="30">
+                            <p> Alayne T</p>
+                        </div>
+                        <div class="row-1">
+                            <img src="user-circle.png" alt="user img pic" width="30" height="30">
+                            <p> Arry Y</p>
+                        </div>
+                        <hr>
+                        <br>
+                        <a href="http://www.viewmore.com">View More</a>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script> 
+    
+        function remove(element) {
+            var todddiv = element.closest('.row'); 
+                if (todddiv) {
+            todddiv.remove();
+            var text1 = document.getElementById("text1");
+            var likebutton2 = document.getElementById("likebutton2");
+            var likeCount = 500;
+            
+                likeCount++;
+    
+                text1.textContent = ` ${likeCount}`;
+            }
+             
+    }
+    function removemin(element) {
+            var todddiv = element.closest('.row'); 
+                if (todddiv) {
+            todddiv.remove();
+            var text1 = document.getElementById("text1");
+            var likebutton2 = document.getElementById("likebutton2");
+            var likeCount = 500;
+            
+                likeCount--;
+    
+                text1.textContent = ` ${likeCount}`;
+            }
+             
+    }
+        </script>
+</body>
+</html>

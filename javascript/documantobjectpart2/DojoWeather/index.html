@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>DojoWeather</h1>
+        <div class="cities">
+           <p onclick="alert('Loading Weather Report...')" >Burbank</p>
+           <p onclick="alert('Loading Weather Report...')" >Chicago</p>
+           <p onclick="alert('Loading Weather Report...')" >Dallas</p>
+        </div>
+    </nav>
+    <div class="title">
+       <h2>San Jose</h2>
+       <div class="temp">
+        <p>show temperature in </p>
+        <select name="temperature" onchange="picktemp(this)">
+            <option>°C</option>
+            <option>°F</option>
+        </select>
+       </div>
+    </div>
+    <script>
+        function picktemp (element) {
+            console.log( element.value);
+            var tempex = "°C";
+            tempex = element. value;
+        }
+    </script>
+    <hr>
+    <section>
+        <div class="one" >
+                <h3>Today</h3>
+                <img src="some_rain.png" alt="some_rain" width="100" height="100">
+                <p >some rain</p>
+                <div class="color">
+                    <p><span style="color: red;">24°</span></p>
+                    <p><span style="color: blue;">18°</span></p>
+                </div>    
+        </div>
+        <div class="one"  >
+            <h3>Tomorrow</h3>
+            <img src="some_sun.png" alt="some_sun" width="100" height="100">
+            <p >some sun</p>
+            <div class="color">
+                <p><span style="color: red;">27°</span></p>
+                <p><span style="color: blue;">19°</span></p>
+            </div>    
+        </div>
+        <div class="one"  >
+            <h3>Friday</h3>
+            <img src="some_clouds.png" alt="some_clouds" width="100" height="100">
+            <p >some clouds</p>
+            <div class="color">
+                <p><span style="color: red;">21°</span></p>
+                <p><span style="color: blue;">16°</span></p>
+            </div>    
+        </div>
+        <div class="one">
+            <h3>Saturday</h3>
+            <img src="some_sun.png" alt="some_sun" width="100" height="100">
+            <p >some sun</p>
+            <div class="color">
+                <p><span style="color: red;">26°</span></p>
+                <p><span style="color: blue;">21°</span></p>
+            </div>    
+    </div>
+    </section>
+    <div class="cookies">
+        <img src="cookie.png" alt="cookies" width="100" height="100">
+        <div class="para">
+            <p class="stop">Stop! Cookie time </p>
+            <p class="last">We use cookies (sadly not the edible ones) to personalize content and ads, to
+                 provide social media features and to analyse our traffic.<a href="www.readmore">Read more</a></p>
+        </div>
+        <div>
+          <button onclick="remove(this)">I Accept</button>
+        </div>
+    </div>
+    <script>
+        function remove(element) {
+        var cookiesdiv = element.closest('.cookies'); 
+            if (cookiesdiv) {
+                cookiesdiv.remove();
+        }
+}
+    </script>
+</body>
+</html>

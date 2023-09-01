@@ -1,0 +1,100 @@
+nav {
+    display: flex;
+    background-color: #9fc5f8;
+    color: white;
+    justify-content: space-around;
+}
+.cities {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    font-size: 22px;
+    font-family: cursive;
+}
+h1 {
+    font-size: 45px;
+    font-family: cursive;
+    margin: 0 0;
+    padding: -11px;
+    
+}
+h2 {
+    padding: 0px 157px;
+    font-size: 32px;
+    font-family: cursive;
+    margin: 0 0;
+}
+h3 {
+    font-family: cursive;
+    font-size: 22px;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+.temp {
+    display: flex;
+    padding: 6px 155px;
+    font-weight: bold;
+}
+select {
+    width: 43px;
+    height: 29px;
+    margin: 11px;
+}
+hr {
+    border: 1px solid black;
+    width: 889px;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 158px;
+}
+.one {
+    text-align: center;
+    background-color: #eeeeee;
+    width: 196px;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+.color {
+        font-family: cursive;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 22px;
+}
+.cookies {
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 889px;
+    background-color: #eeeeee;
+    border: 3px solid;
+    position: fixed;
+    left: 166px;
+}
+.para {
+    width: 674px;
+}
+.last{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.stop {
+    font-weight: bolder;
+    font-size: 17px;
+}
+button {
+    box-shadow: 4px 3px 0px rgb(2 2 2);
+    border: 2px solid #000000;
+    color: white;
+    background-color: #2b78e4;
+    font-size: 13px;
+    width: 97px;
+    height: 34px;
+    margin: 46px 43px 0px 6px;
+}
