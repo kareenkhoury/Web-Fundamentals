@@ -1,0 +1,84 @@
+1) Create 5 different authors: Jane Austen, Emily Dickinson, Fyodor Dostoevsky,
+ William Shakespeare, Lau Tzu
+INSERT INTO `mydb`.`authors` (`id`, `name`, `created_at`, `updated_at`)
+VALUES
+    ('1', 'Jane Austen', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('2', 'Emily Dickinson', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('3', 'Fyodor Dostoevsky', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('4', 'William Shakespeare', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('5', 'Lau Tzu', '2014-02-01 00:00:01', '2014-02-01 00:00:01');
+
+2)Create 5 books with the following names: C Sharp, Java, Python, PHP, Ruby
+INSERT INTO `mydb`.`books` (`id`, `title`, `num_of_pages`, `created_at`, `updated_at`)
+VALUES
+    ('1', 'C Sharp', '100', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('2', 'Java', '200', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('3', 'Python', '300', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('4', 'PHP', '400', '2014-02-01 00:00:01', '2014-02-01 00:00:01'),
+    ('5', 'Ruby', '500', '2014-02-01 00:00:01', '2014-02-01 00:00:01');
+
+3)Change the name of the C Sharp book to C#
+UPDATE `mydb`.`books` SET `title` = 'C#' WHERE (`id` = '1');
+
+4)Change the first name of the 4th author to Bill
+UPDATE `mydb`.`authors` SET `name` = 'Bill' WHERE (`id` = '4');
+
+5)Have the first author favorite the first 2 books
+INSERT INTO `mydb`.`favorities` (`authors_id`, `books_id`)
+VALUES
+    ('1', '1'),
+    ('1', '2');
+
+6)Have the second author favorite the first 3 books
+INSERT INTO `mydb`.`favorities` (`authors_id`, `books_id`)
+VALUES
+    ('2', '1'),
+    ('2', '2'),
+    ('2', '3');
+
+7)Have the third author favorite the first 4 books
+INSERT INTO `mydb`.`favorities` (`authors_id`, `books_id`)
+VALUES
+    ('3', '1'),
+    ('3', '2'),
+    ('3', '3'),
+    ('3', '4');
+
+8)Have the fourth author favorite all the books
+INSERT INTO `mydb`.`favorities` (`authors_id`, `books_id`)
+VALUES
+    ('4', '1'),
+    ('4', '2'),
+    ('4', '3'),
+    ('4', '4'),
+    ('4', '5');
+
+9)Retrieve all the authors who favorited the 3rd book
+SELECT authors.*
+FROM `mydb`.`authors` 
+JOIN `mydb`.`favorities`  ON authors.id = favorities.authors_id
+WHERE favorities.books_id = '3';
+
+10)Remove the first author of the 3rd book's favorites
+SELECT authors.*
+FROM `mydb`.`authors` 
+JOIN `mydb`.`favorities`ON authors.id = favorities.authors_id
+WHERE favorities.books_id = '3'
+LIMIT 1;
+
+11)Add the 5th author as an other who favorited the 2nd book
+INSERT INTO `mydb`.`favorities` (`authors_id`, `books_id`)
+VALUES
+    ('5', '2');
+
+12)Find all the books that the 3rd author favorited
+SELECT books.*
+FROM `mydb`.`books` 
+JOIN `mydb`.`favorities`  ON books.id = favorities.books_id
+WHERE favorities.authors_id = '3';
+
+13)Find all the authors that favorited to the 5th book
+SELECT authors.*
+FROM `mydb`.`authors` 
+JOIN `mydb`.`favorities`  ON authors.id = favorities.authors_id
+WHERE favorities.books_id = '5';

@@ -1,0 +1,13 @@
+USE [twitter];
+
+SELECT *
+FROM users
+WHERE id <= 3;
+
+INSERT INTO tweets (tweet, user_id, created_at , updated_at) 
+VALUES('hello', '2', '2014-02-01 00:00:01', '2014-02-01 00:00:01');
+
+UPDATE `twitter`.`users` SET `first_name` = 'mousa' WHERE (`id` = '2');
+
+DELETE FROM `twitter`.`users` WHERE (`id` = '4');
+SET SQL_SAFE_UPDATES = 0;
