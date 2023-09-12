@@ -1,5 +1,5 @@
 1)Create 6 new users
-INSERT INTO `mydb`.`person` (`id`, `firstname`, `lastname`)
+INSERT INTO mydb.person (id, firstname, lastname)
 VALUES
   ('1', 'kareen', 'khoury'),
   ('2', 'sama', 'mousa'),
@@ -48,24 +48,24 @@ VALUES
 
 8)Display the relationships create as shown in the above image
 select
- user1.`id`,user1.`firstname` ,user1.`lastname`,
- user2.`id` ,user2.`firstname` ,user2.`lastname` 
-FROM `person` AS user1
-LEFT JOIN `relationperson` ON user1.`id` = `relationperson`.`person_id`
-LEFT JOIN `person` AS user2 ON user2.`id` = `relationperson`.`relation_id`;
+ user1.id,user1.firstname ,user1.lastname,
+ user2.id ,user2.firstname ,user2.lastname 
+FROM person AS user1
+LEFT JOIN relationperson ON user1.id = relationperson.person_id
+LEFT JOIN person AS user2 ON user2.id = relationperson.relation_id;
 
 9)Return all users who are friends with the first user, 
 make sure their names are displayed in results.
 SELECT
-  user2.`id` ,user2.`firstname`,user2.`lastname` 
-FROM `person` AS user1
-LEFT JOIN `relationperson` ON user1.`id` = `relationperson`.`person_id`
-LEFT JOIN `person` AS user2 ON user2.`id` = `relationperson`.`relation_id`
-WHERE user1.`id` = 1;
+  user2.id,user2.firstname,user2.lastname 
+FROM person AS user1
+LEFT JOIN relationperson ON user1.id = relationperson.person_id
+LEFT JOIN person AS user2 ON user2.id = relationperson.relation_id
+WHERE user1.id = 1;
 
 10)Return the count of all friendships
 SELECT COUNT(*) 
-FROM `relationperson`;
+FROM relationperson;
 
 11)Find out who has the most friends and return the count of their friends.
 SELECT
